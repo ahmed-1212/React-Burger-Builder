@@ -1,0 +1,24 @@
+.Spinner {
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+  }
+  .Spinner:after {
+    content: " ";
+    display: block;
+    width: 46px;
+    height: 46px;
+    margin: 14px 0 0 0rem;
+    border-radius: 50%;
+    border: 5px solid #444;
+    border-color: #444 transparent #444 transparent;
+    animation: spinner 1.2s linear infinite;
+  }
+  @keyframes spinner {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
